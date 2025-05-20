@@ -1,16 +1,28 @@
-import { 
-  Linkedin, 
-  Mail, 
-  MapPin, 
-  PhoneCall, 
-  Send, 
-  Youtube } from "lucide-react";
+import {
+  Linkedin,
+  Mail,
+  MapPin,
+  PhoneCall,
+  Send,
+  Youtube
+} from "lucide-react";
 import { cn } from "../lib/utils";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
+import emailjs from 'emailjs-com'
 
 
 export const ContactSection = () => {
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: ""
+  });
+
+  const SERVICE_ID = "service_zvmlsyc";
+  const TEMPLATE_ID = "template_3w7muz7";
+  const PUBLIC_KEY = "vFJe2NrQ6ShL7LrD2";
 
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -27,6 +39,11 @@ export const ContactSection = () => {
       });
       setIsSubmitting(false);
     }, 1500);
+
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY).then((result) => {
+      console.log('email sent!');
+      setFormData({name: "", email: "", message: "" })
+    }).catch(() => alert("Opps, something went wrong. Please try again."));
   };
 
   return (
@@ -100,51 +117,57 @@ export const ContactSection = () => {
           <div className="bg-card p-8 rounded-large shawdow-xs" onSubmit={handleSubmit}>
             <h3 className="text-2xl font-semibold mb-6">Send a Message</h3>
 
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
-                <label 
-                htmlFor="name" 
-                className="block text-sm font-medium mb-2"> Your Name</label>
-                <input 
-                type="text" 
-                id="name" 
-                name="name" 
-                required 
-                className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary" 
-                placeholder="write your name..."/>
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium mb-2"> Your Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  value={formData.name}
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
+                  placeholder="write your name..."
+                  onChange={(e) => setFormData({...formData, name: e.target.value})} />
               </div>
               <div>
-                <label 
-                htmlFor="email" 
-                className="block text-sm font-medium mb-2"> Your Email</label>
-                <input 
-                type="email" 
-                id="email" 
-                name="email" 
-                required 
-                className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary" 
-                placeholder="write your email..."/>
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium mb-2"> Your Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  value={formData.email}
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
+                  placeholder="write your email..."
+                  onChange={(e) => setFormData({...formData, email: e.target.value})} />
               </div>
               <div>
-                <label 
-                htmlFor="message" 
-                className="block text-sm font-medium mb-2"> Your Message</label>
-                <textarea 
-                id="message" 
-                name="message" 
-                required 
-                className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary resize-none" 
-                placeholder="Hello, I'd like to talk about..."/>
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium mb-2"> Your Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  value={formData.message}
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary resize-none"
+                  placeholder="Hello, I'd like to talk about..."
+                  onChange={(e) => setFormData({...formData, message: e.target.value})} />
               </div>
-              <button 
-              type="submit" 
-              disabled={isSubmitting}
-              className={cn(
-                "cosmic-button w-full flex items-center justify-center gap-2"                
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className={cn(
+                  "cosmic-button w-full flex items-center justify-center gap-2"
                 )}>
-                {isSubmitting ? "Sending..." : "Send Message"} 
-                  <Send size={16}/>
-              
+                {isSubmitting ? "Sending..." : "Send Message"}
+                <Send size={16} />
+
               </button>
             </form>
           </div>
