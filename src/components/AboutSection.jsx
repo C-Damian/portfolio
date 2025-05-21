@@ -37,7 +37,7 @@ export const AboutSection = () => {
                 <h4 className="font-semibold text-lg">
                 Back-end Development</h4>
                 <p className="text-muted-foreground">
-                  Creating effective solutions that address business needs with simplicity and reliability
+                Designing and implementing robust server-side solutions that prioritize reliability, scalability, and simplicity to meet real-world business requirements.
                 </p>
               </div>
             </div>
@@ -50,7 +50,7 @@ export const AboutSection = () => {
                 <h4 className="font-semibold text-lg">
                 IT & Devops</h4>
                 <p className="text-muted-foreground">
-                  Creating effective solutions that address business needs with simplicity and reliability
+                Bridging development and operations to streamline infrastructure, automate workflows, and deliver secure, efficient, and scalable IT solutions aligned with business goals.
                 </p>
               </div>
             </div>
@@ -63,7 +63,7 @@ export const AboutSection = () => {
                 <h4 className="font-semibold text-lg"> 
                 Product Delivery & UAT</h4>
                 <p className="text-muted-foreground">
-                  Creating effective solutions that address business needs with simplicity and reliability
+                  CDriving end-to-end product delivery with a focus on aligning technical outcomes with user needs through rigorous testing, stakeholder collaboration, and continuous improvement.
                 </p>
               </div>
             </div>
