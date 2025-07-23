@@ -63,7 +63,7 @@ export const AboutSection = () => {
                 <h4 className="font-semibold text-lg"> 
                 Product Delivery & UAT</h4>
                 <p className="text-muted-foreground">
-                  CDriving end-to-end product delivery with a focus on aligning technical outcomes with user needs through rigorous testing, stakeholder collaboration, and continuous improvement.
+                  Driving end-to-end product delivery with a focus on aligning technical outcomes with user needs through rigorous testing, stakeholder collaboration, and continuous improvement.
                 </p>
               </div>
             </div>
