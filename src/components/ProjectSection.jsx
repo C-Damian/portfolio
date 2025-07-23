@@ -5,7 +5,7 @@ const projects = [
   {
     id: 1,
     title: "AWS API Gateway",
-    description: "An API Gateway to integrate with AWS services.",
+    description: "An API Gateway to interact with AWS services.",
     image: apigatewayImg,
     tags: ["FastAPI", "AWS", "Terraform", "CI/CD", "Python"],
     demoUrl: "https://www.youtube.com/watch?v=CeB2i8V0O9c",
