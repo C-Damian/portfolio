@@ -5,7 +5,7 @@ const projects = [
     id: 1,
     title: "AWS API Gateway",
     description: "An API Gateway to integrate with AWS services.",
-    image: "src/assets/apigateway.png",
+    image: "./../assets/apigateway.png",
     tags: ["FastAPI", "AWS", "Terraform", "CI/CD", "Python"],
     demoUrl: "https://www.youtube.com/watch?v=CeB2i8V0O9c",
     githubUrl: "https://github.com/C-Damian/cloud-ops-api-gateway",
