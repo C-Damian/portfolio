@@ -3,12 +3,12 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
-    image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
-    demoUrl: "#",
-    githubUrl: "#",
+    title: "AWS API Gateway",
+    description: "An API Gateway to integrate with AWS services.",
+    image: "/projects/api-gateway.png",
+    tags: ["FastAPI", "AWS", "Terraform", "CI/CD", "Python"],
+    demoUrl: "https://www.youtube.com/watch?v=CeB2i8V0O9c",
+    githubUrl: "https://github.com/C-Damian/cloud-ops-api-gateway",
   },
   {
     id: 2,
