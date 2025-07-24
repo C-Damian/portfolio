@@ -14,15 +14,15 @@ export const AboutSection = () => {
           <h3 className="text-2xl font-semibold">Passionate Backend Developer and UAT tester</h3>
 
           <p className="text-muted-foreground">
-            • Experienced IT professional with a background in product delivery, UAT, and automation-driven environments.
-            • Skilled in cross-functional collaboration across development, QA, and operations to ensure smooth implementation and continuous improvement.
-            • Proficient in scripting (Python, Bash), Linux, AWS, and core networking, security, and systems administration concepts.
+            Experienced IT professional with a background in product delivery, UAT, and automation-driven environments.<br/>
+            Skilled in cross-functional collaboration across development, QA, and operations to ensure smooth implementation and continuous improvement.<b/>
+            Proficient in scripting (Python, Bash), Linux, AWS, and core networking, security, and systems administration concepts.
           </p>
           <p className="text-muted-foreground">
-            • Certified in A+, Network+, Security+, ITIL 4, AWS Cloud Practitioner, and Linux Essentials.
-            • Actively expanding into infrastructure-as-code, containerization, and backend API development (FastAPI, Django).
-            • Holds a B.S. in Information Technology with a strong grasp of the SDLC and automation best practices.
-            • Interested in the intersection of infrastructure, operations, and emerging tech to drive reliability and innovation.
+            Certified in A+, Network+, Security+, ITIL 4, AWS Cloud Practitioner, and Linux Essentials.<br/>
+            Actively expanding into infrastructure-as-code, containerization, and backend API development (FastAPI, Django).<br/>
+            Hold a B.S. in Information Technology with a strong grasp of the SDLC and automation best practices.<br/>
+            Interested in the intersection of infrastructure, operations, and emerging tech to drive reliability and innovation.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
