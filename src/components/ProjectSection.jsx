@@ -13,19 +13,19 @@ const projects = [
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
+    title: "Blockchain tracker(coming)",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
+      "Interactive crypto tracker with data visualization and filtering capabilities.",
     image: "/projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
+    tags: ["Go", "Django", "AWS"],
     demoUrl: "#",
     githubUrl: "#",
   },
   {
     id: 3,
-    title: "E-commerce Platform",
+    title: "Secure File Upload & Processing Service",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
+      "Full-featured S3 file upload and processing service with user authentication and admin dashboard.",
     image: "/projects/project3.png",
     tags: ["React", "Node.js", "Stripe"],
     demoUrl: "#",
