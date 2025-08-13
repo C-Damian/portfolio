@@ -14,10 +14,10 @@ const projects = [
   },
   {
     id: 2,
-    title: "Blockchain tracker(coming)",
+    title: "FastAPI X Bot",
     description:
-      "Interactive crypto tracker with data visualization and filtering capabilities.",
-    image: "/projects/X.png",
+      "A FastAPI bot that automatically posts daily tech tips to X and autogenerates its own tips",
+    image: xbotImg,
     tags: ["FastAPI", "SQLalchemy", "PostgresSQL", "AI Promtp Engineering"],
     demoUrl: "https://github.com/C-Damian/FastAPI-X-Bot",
     githubUrl: "https://github.com/C-Damian/FastAPI-X-Bot",
