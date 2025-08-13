@@ -1,5 +1,6 @@
 import { ArrowRight, ExternalLink, Github } from "lucide-react";
-import  apigatewayImg from "../assets/apigateway.png"
+import apigatewayImg from "../assets/apigateway.png"
+import xbotImg from "../assets/xbot.png"
 
 const projects = [
   {
@@ -16,16 +17,16 @@ const projects = [
     title: "Blockchain tracker(coming)",
     description:
       "Interactive crypto tracker with data visualization and filtering capabilities.",
-    image: "/projects/project2.png",
-    tags: ["Go", "Django", "AWS"],
-    demoUrl: "#",
-    githubUrl: "#",
+    image: "/projects/X.png",
+    tags: ["FastAPI", "SQLalchemy", "PostgresSQL", "AI Promtp Engineering"],
+    demoUrl: "https://github.com/C-Damian/FastAPI-X-Bot",
+    githubUrl: "https://github.com/C-Damian/FastAPI-X-Bot",
   },
   {
     id: 3,
-    title: "Secure File Upload & Processing Service",
+    title: "File Converter or Blockchain Tracker",
     description:
-      "Full-featured S3 file upload and processing service with user authentication and admin dashboard.",
+      "Upcoming Project",
     image: "/projects/project3.png",
     tags: ["React", "Node.js", "Stripe"],
     demoUrl: "#",
