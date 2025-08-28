@@ -29,7 +29,7 @@ export const AboutSection = () => {
             <a href="#contact" className="cosmic-button">
               Get In Touch
             </a>
-            <a target="_blank" href="https://www.google.com" className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/15 transition-colors duration-300">
+            <a target="_blank" href="https://docs.google.com/document/d/17sqwYsQEyCHOVA-3ns2GlsnoKBLuBFyu/edit?usp=drivesdk&ouid=118090727488889612868&rtpof=true&sd=true" className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/15 transition-colors duration-300">
               Download CV <LucideCircleArrowDown className="inline pb-1" />
             </a>
           </div>
