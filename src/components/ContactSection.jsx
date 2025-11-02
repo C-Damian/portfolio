@@ -9,8 +9,9 @@ import {
 import { cn } from "../lib/utils";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
-import emailjs from 'emailjs-com'
+import emailjs from 'emailjs-com';
 
+const apiKey = import.meta.env.PUBLIC_KEY;
 
 export const ContactSection = () => {
 
@@ -22,7 +23,7 @@ export const ContactSection = () => {
 
   const SERVICE_ID = "service_zvmlsyc";
   const TEMPLATE_ID = "template_3w7muz7";
-  const PUBLIC_KEY = "vFJe2NrQ6ShL7LrD2";
+  const PUBLIC_KEY = apiKey;
 
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
