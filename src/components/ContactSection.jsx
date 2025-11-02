@@ -11,7 +11,7 @@ import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
 import emailjs from 'emailjs-com';
 
-const apiKey = process.env.PUBLIC_KEY;
+const apiKey = import.meta.env.VITE_PUBLIC_KEY;
 
 export const ContactSection = () => {
 
